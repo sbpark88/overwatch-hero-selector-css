@@ -1,12 +1,25 @@
+body {
+  height: 100vh;
+  background-image: url("/assets/images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .container {
+  $hero-count: 32;
+  $section-padding: 20px;
+
+  min-width: 230px;
+  padding: 50px;
+
   .heroes {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 700px;
     margin: 0 auto;
-    padding: 40px 20px;
-    background-color: orange;
+    padding: 40px $section-padding;
 
     .hero {
       width: 80px;
@@ -16,6 +29,7 @@
       border-radius: 10px;
       box-sizing: border-box;
       background-color: #555;
+      overflow: hidden;
       transform: skewX(-14deg);
       transition:
         transform 0.1s,
@@ -28,7 +42,29 @@
       }
 
       .image {
+        width: 140%;
+        height: 100%;
+        background-position: center;
+        background-size: 90px;
+        background-repeat: no-repeat;
+        transform: skewX(14deg) translateX(-16px);
       }
+
+      @for $i from 1 through $hero-count {
+        &:nth-child(#{$i}) .image {
+          background-image: url("/assets/images/hero#{$i}.png");
+        }
+      }
+    }
+  }
+
+  .logo {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 0 $section-padding;
+
+    img {
+      width: 100%;
     }
   }
 }
