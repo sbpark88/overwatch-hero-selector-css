@@ -15,7 +15,6 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: "assets/resource",
         generator: {
           filename: "assets/images/[hash][ext][query]", // 이미지가 번들될 위치를 변경
         },
