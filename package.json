@@ -1,0 +1,26 @@
+{
+  "name": "overwatch-hero-selector-css",
+  "version": "1.0.0",
+  "description": "Overwatch heroes selector css",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --mode development --open",
+    "build": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "sbpark88",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^6.10.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "html-webpack-plugin": "^5.6.0",
+    "prettier": "^3.2.5",
+    "sass": "^1.70.0",
+    "sass-loader": "^14.1.0",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}

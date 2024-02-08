@@ -95,7 +95,7 @@
 해당 프로젝트에 사용된 기술입니다.
 
 ![HTML5][HTML5 Icon]
-![CSS3][CSS3 Icon]
+![SCSS][SCSS Icon]
 ![JavaScript][JavaScript Icon]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
