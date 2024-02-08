@@ -151,9 +151,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] HTML Semantic Elements 를 고려한 HTML 마크업
-- [ ] CSS Stylus
-- [ ] JavaScript
+- [X] HTML Semantic Elements 를 고려한 HTML 마크업
+- [X] CSS Stylus
+- [X] JavaScript
 - [ ] Github deployment
     - [ ] 페이지 확인
     - [ ] 리드미 최종 업데이트
